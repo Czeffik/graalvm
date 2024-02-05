@@ -1,4 +1,4 @@
-# MacOS with aarch64
+## MacOS with aarch64
 
 If you are working on macbook with `aarch64` architecture and you would like to build native image
 using [GraalVM](https://www.graalvm.org/latest/docs/getting-started/macos/) it may be necessary to use 
@@ -18,4 +18,13 @@ Where:
 - `-v $(pwd):/app` - mounts your current directory as volume in docker container
 - `--platform linux/amd64` - select target native image platform
 - `--entrypoint /bin/bash` 
+
+
+### Installing tools in docker container with GraalVM
+
+```shell
+microdnf install -y zip
+```
+it will install zip.
+
 
